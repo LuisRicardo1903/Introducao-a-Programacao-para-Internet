@@ -1,0 +1,34 @@
+<html>
+	<body>
+	
+		Informe o valor 1:
+		<input type="text" id="valor1">
+		Informe o valor 2:
+		<input type="text" id="valor2">
+		<button id="botao" onclick="minhaFuncao()">Clique Aqui</button>
+		
+		<script>
+			function minhaFuncao()
+			{
+				var x = document.getElementById("valor1");
+				var y = document.getElementById("valor2");
+				var res = parseInt(x.value) + parseInt(y.value);
+		
+		alert (res);
+		
+				if(res %2==0)
+				{
+					var botao = document.getElementById("botao");
+					botao.style.backgroundColor = '#F00';
+				
+				}
+				else
+				{
+					var botao = document.getElementById("botao");
+					botao.style.backgroundColor = '#00F';
+				}
+			}
+		</script>
+		
+	</body>
+</html>

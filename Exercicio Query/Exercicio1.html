@@ -1,0 +1,38 @@
+<!--Com o surgimento de Media Query no CSS2, passou a ser pssivel estipular diferentes estilos CSS para diferentes tamanhos de telas. Pode ser utilizado para diferentes tamanhos de:
+ - Largura e Altura de Tela
+ - Largura e Altura do Dispositivo
+ - Orientação (Virar o Celular)
+ - Resolução
+ Com o CSS3, foi possivel atribuir arquivos CSS diferentes conforme o tamanho da tela.
+ Exemplo: -->
+ 
+ <!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<style>
+		
+		body {
+		background-color: yellow;
+		}
+		
+		@media screen and (max-width: 900px)
+		{
+			body { background-color: blue;
+				   font-size: 10px;
+				   font-color: red; }
+		}
+		@media screen and (max-width:480px)
+		{
+			body { background-color: red;
+				   font-size: 50px;
+				   font-color: blue; }
+		}
+	
+		</style>
+	</head>
+	<body>
+	
+	lorem ipsum dolor sit amet
+	
+	</body>
+</html>

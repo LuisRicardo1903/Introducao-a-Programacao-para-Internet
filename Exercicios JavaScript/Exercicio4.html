@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	
+	<html>
+    <head>
+        
+    </head>
+    <body>
+	
+	<div id="minhaDiv" style="display:none">Apareceu</div>
+	<button type="button" onclick="mudarEstado('minhaDiv')">Mostrar / Esconder</button>
+	
+	
+	<script>
+	
+	function mudarEstado(estado) {
+		var display = document.getElementById(estado).style.display;
+		if (display == "none")
+		{
+		document.getElementById(estado).style.display = 'block';
+		}
+		else
+		{
+		document.getElementById(estado).style.display = 'none';
+	}
+}
+	
+	</script>
+        
+    </body>
+</html>

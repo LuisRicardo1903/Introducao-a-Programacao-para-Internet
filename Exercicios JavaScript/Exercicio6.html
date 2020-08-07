@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	
+	<head>
+		
+		
+		
+		
+		
+		
+		
+		
+	
+		
+	</head>	
+	<body id="corpo">
+	
+	<p id="paragrafo"> 
+	
+	Texto!
+	
+	</p>
+	
+	<button id="botao1" onclick="vermelho()">Vermelho</button>
+	<button id="botao2" onclick="azul()">Azul</button>
+	<input type="button" onclick="mudaPreto()" value="Muda Para Preto" />
+	<input type="button" onclick="mudaBranco()" value="Muda para Branco" />
+	
+	<script>
+	
+	function azul()
+	{
+	var x = document.getElementById("corpo");
+	
+		x.style.backgroundColor='blue';
+	}
+	
+	function vermelho()
+	{
+	var x = document.getElementById("corpo");
+	
+		x.style.backgroundColor='red';
+	}
+	
+	function mudaPreto(){
+
+	document.getElementById("paragrafo").style.color="black";
+
+	}
+	
+	function mudaBranco(){
+
+	document.getElementById("paragrafo").style.color="white";
+
+	}
+	
+	
+	</script>
+	</body>
+</html>

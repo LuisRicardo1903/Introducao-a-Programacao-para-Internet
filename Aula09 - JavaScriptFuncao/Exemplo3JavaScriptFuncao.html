@@ -1,0 +1,32 @@
+<html>
+	<body>
+		Informe o valor 1:
+		<input type="text" id="valor1">
+		Informe o valor 2:
+		<input type="text" id="valor2">
+		<input type="button" value="Clique Aqui" onclick="botao()"/>
+		
+		<script>
+			function botao()
+			{
+				var x = document.getElementById("valor1");
+				var y = document.getElementById("valor2");
+				var res = parseInt(x.value) + parseInt(y.value);
+				
+				alert(res);
+				
+				//x.value = x.value.toUpperCase();
+				
+				/*-------------------------------------------------------*/
+				
+				//var x = document.getElementById("nome");
+				//alert(x.value);
+				
+				
+				
+			}
+			
+		</script>
+		
+	</body>
+</html>

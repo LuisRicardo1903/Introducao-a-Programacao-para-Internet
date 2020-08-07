@@ -1,0 +1,37 @@
+<html>
+	<body>
+		Informe o nome:
+		<input type="text" id="nome" "minhaFuncao()">
+		Informe a idade:
+		<input type="text" id="idade"">
+		<input type="button" value="Clique Aqui" onclick="botao()"/>
+		
+		<script>
+			function botao()
+			{
+				var x = document.getElementById("nome");
+				var y = document.getElementById("idade");
+				
+				if(y.value >= 18){
+				alert(x.value + ' eh maior de idade' );
+				}
+				else{
+				alert(x.value + ' eh menor de idade' );
+				}
+				
+				//alert(x.value + );
+				//x.value = x.value.toUpperCase();
+				
+				/*-------------------------------------------------------*/
+				
+				//var x = document.getElementById("nome");
+				//alert(x.value);
+				
+				
+				
+			}
+			
+		</script>
+		
+	</body>
+</html>
